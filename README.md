@@ -4,4 +4,5 @@
 # Файлы с расширением.tfvars или оканчивающиеся на .tfvars.json
 # Файлы override.tf и override.tf.json, а также файлы, оканчивающиеся на _override.tf и _override.tf.json
 # Файлы .terraformrc и terraform.rc
-New line for example!!!
+New line for example!!!\
+Line for PyCharm

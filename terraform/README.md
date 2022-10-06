@@ -1,16 +1,16 @@
-#2.4 Инструменты Git\
-#1
+# 2.4 Инструменты Git\
+# 1
 Ответ: aaefeaefead2207ef7e2aa5dc81a34aedf0cad4c32545 - Update CHANGELOG.md\
 Решение: git show aefea\
-#2
+# 2
 Ответ: tag: v0.12.23\
 Решение: git show 85024d3\
-#3
+# 3
 Ответ: 2 родителя, так как это мерж-коммит:\
   56cd7859e05c36c06b56d013b55a252d0bb7e158\
   9ea88f22fc6269854151c571162c5bcf958bee2b\
 Решение: git show b8d720^ and git show b8d720^2\
-#4
+# 4
 Ответ:\
 33ff1c03bb960b332be3af2e333462dde88b279e (tag: v0.12.24) v0.12.24\
 b14b74c4939dcab573326f4e3ee2a62e23e12f89 [Website] vmc provider links\
@@ -23,10 +23,10 @@ d5f9411f5108260320064349b757f55c09bc4b80 command: Fix bug when using terraform l
 dd01a35078f040ca984cdd349f18d0b67e486c35 Update CHANGELOG.md\
 225466bc3e5f35baa5d07197bbc079345b77525e Cleanup after v0.12.23 release\
 Решение:git log --pretty=oneline v0.12.24 --not v0.12.23   (git log --pretty=oneline v0.12.23..v0.12.\
-5#
+5 #
 Ответ: 8c928e83589d90a031f811fae52a81be7153e82f\
 Решение:  git log -S 'func providerSource('\
-6#
+6 #
 Ответ:\
 78b12205587fe839f10d946ea3fdc06719decb05\
 52dbf94834cb970b510f2fba853a5b49ad9b1a46\
@@ -37,6 +37,6 @@ dd01a35078f040ca984cdd349f18d0b67e486c35 Update CHANGELOG.md\
 git grep "globalPluginDirs"\
 git log -L :globalPluginDirs:commands.go\
 git log -L :globalPluginDirs:plugins.go\
-7#
+7 #
 Ответ: Author: Martin Atkins <mart@degeneration.co.uk>\
 Решение: git log -S"func synchronizedWriters("

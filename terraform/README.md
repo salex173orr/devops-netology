@@ -1,6 +1,6 @@
 # 2.4 Инструменты Git
 # 1
-Ответ: aaefeaefead2207ef7e2aa5dc81a34aedf0cad4c32545 - Update CHANGELOG.md\
+Ответ: aefeaefead2207ef7e2aa5dc81a34aedf0cad4c32545 - Update CHANGELOG.md\
 Решение: git show aefea
 # 2
 Ответ: tag: v0.12.23\

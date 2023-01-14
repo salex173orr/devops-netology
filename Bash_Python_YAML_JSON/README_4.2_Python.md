@@ -155,7 +155,7 @@ other@main:~/netology/sysadm-homeworks$ git status
 import socket
 import time
 services = {'drive.google.com':'0.0.0.0', 'mail.google.com':'0.0.0.0', 'google.com': '0.0.0.0'}
-while 1 == 1:
+while True :
   for service in services :
     ip = socket.gethostbyname(service)
     if ip != services[service] :

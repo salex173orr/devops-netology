@@ -42,20 +42,24 @@ alexandr_shtykov@Ubuntu-Netology:~/Netology/DB/db-02-sql$ docker-compose up -d
 
 
 alexandr_shtykov@Ubuntu-Netology:~/Netology/DB/db-02-sql$ docker exec -it psql12 bash
-root@965152e0a6d4:/# 
+root@965152e0a6d4:/#
+
 ```
 
 ## Задача 2
 
 В БД из задачи 1: 
 - создайте пользователя test-admin-user и БД test_db
+
 ```
 test=# create user "test-admin-user";
 CREATE ROLE
 test=# create database test_db;
 CREATE DATABASE
-- ```
+
+```
 - в БД test_db создайте таблицу orders и clients (спeцификация таблиц ниже)
+
 ```
 test_db=> create table orders (id serial primary key, наименование text, цена integer);
 CREATE TABLE
@@ -63,6 +67,7 @@ test_db=> create table clients (id serial primary key, фамилия text, ст
 CREATE TABLE
 test_db=> create index ON clients (страна_проживания);
 CREATE INDEX
+
 ```
 - предоставьте привилегии на все операции пользователю test-admin-user на таблицы БД test_db
 ```
@@ -72,11 +77,14 @@ test_db=> GRANT ALL ON TABLE clients TO "test-admin-user";
 GRANT
 ```
 - создайте пользователя test-simple-user
+
 ```
 test_db=# CREATE USER "test-simple-user";
 CREATE ROLE
+
 ```
 - предоставьте пользователю test-simple-user права на SELECT/INSERT/UPDATE/DELETE данных таблиц БД test_db
+
 ```
 test_db=# GRANT SELECT,INSERT,UPDATE,DELETE ON TABLE orders TO "test-simple-user";
 GRANT

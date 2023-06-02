@@ -1,0 +1,15 @@
+version: "3.6"
+
+services:
+  centos7:
+    image: centos:7
+    container_name: centos7
+    entrypoint: "sleep infinity"
+  ubuntu:
+    image: pycontribs/ubuntu:latest
+    container_name: ubuntu
+    entrypoint: "sleep infinity"
+  fedora:
+    image: pycontribs/fedora:latest
+    container_name: fedora
+    entrypoint: "sleep infinity"

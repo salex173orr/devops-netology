@@ -58,6 +58,13 @@
   <img src="./Assets/ansible_1_9.png">
 </p>
 
+```
+alexandr_shtykov@Ubuntu-Netology:~/Netology/devops-netology$ ansible-doc -t connection -l | grep control
+community.docker.nsenter       execute on host running controller container
+local                          execute on controller   
+
+Подходящий вариант плагина - local
+```
 10. В `prod.yml` добавьте новую группу хостов с именем  `local`, в ней разместите localhost с необходимым типом подключения.
 <p align="center">
   <img src="./Assets/ansible_1_10.png">

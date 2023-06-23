@@ -1,0 +1,13 @@
+---
+Clickhouse:
+  hosts:
+    clickhouse:
+      ansible_host: 192.168.56.66
+      ansible_ssh_user: vagrant
+      ansible_ssh_pass: vagrant
+Vector:
+  hosts:
+    vector:
+      ansible_host: 192.168.56.77
+      ansible_ssh_user: vagrant
+      ansible_ssh_pass: vagrant

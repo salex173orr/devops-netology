@@ -42,7 +42,7 @@ ___
 - [vector-role](https://github.com/salex173orr/vector-role/tree/v1.0.1)  
 - [nginx-role](https://github.com/salex173orr/nginx-role/tree/v1.0.0)  
 - [lighthouse-role](https://github.com/salex173orr/lighthouse-role/tree/v1.0.0)  
-- [playbook]()
+- [playbook](https://github.com/salex173orr/devops-netology/tree/Ansible/Ansible_CI-CD_Monitoring/08-ansible-04-role/playbook)
 
 ---
 

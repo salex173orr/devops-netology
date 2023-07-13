@@ -1,0 +1,3 @@
+---
+# defaults file for vector-role
+vector_url: "https://packages.timber.io/vector/latest/vector-0.30.0-1.x86_64.rpm"

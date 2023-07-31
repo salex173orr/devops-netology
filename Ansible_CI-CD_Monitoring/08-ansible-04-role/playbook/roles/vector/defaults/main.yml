@@ -1,3 +1,23 @@
 ---
 # defaults file for vector-role
-vector_url: "https://packages.timber.io/vector/latest/vector-0.30.0-1.x86_64.rpm"
+vector_url: "https://packages.timber.io/vector/latest/vector-0.31.0-1.x86_64.rpm"
+vector_url_deb: "https://packages.timber.io/vector/latest/vector_0.31.0-1_amd64.deb"
+clickhouse: 51.250.6.191
+vector_config:
+  sources:
+      local_logs:
+        type: file
+        include:
+          - /var/log/**/*.log
+        read_from: beginning
+  sinks:
+    local_logs_to_clickhouse:
+      type: clickhouse
+      inputs:
+        - local_logs
+      database: logs
+      endpoint: http://{{ clickhouse }}:8123
+      table: access_logs
+      compression: gzip
+      healthcheck: false
+      skip_unknown_fields: true

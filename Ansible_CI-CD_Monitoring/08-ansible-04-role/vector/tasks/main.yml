@@ -1,5 +1,5 @@
 ---
-- name: Install Vector on Centos
+- name: Install Vector on Centos_7
   become: true
   ansible.builtin.yum:
     name: "{{ vector_url }}"
@@ -33,4 +33,3 @@
     name: vector
     state: started
     daemon_reload: true
-  when: ansible_facts.virtualization_type != "docker"
